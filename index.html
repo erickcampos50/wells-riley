@@ -239,6 +239,13 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#aplicacao_comparativa_do_modelo_de_wells-riley_e_distanciamento_social_a_ambientes_da_ufjf-gv" class="md-nav__link">
+    Aplicação comparativa do modelo de Wells-Riley e distanciamento social a ambientes da UFJF-GV
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -303,6 +310,13 @@
         
       </ul>
     </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#aplicacao_comparativa_do_modelo_de_wells-riley_e_distanciamento_social_a_ambientes_da_ufjf-gv" class="md-nav__link">
+    Aplicação comparativa do modelo de Wells-Riley e distanciamento social a ambientes da UFJF-GV
+  </a>
   
 </li>
       
@@ -416,7 +430,26 @@
 </ul>
 <p>O resultado das simulações podem ser vistas na imagem abaixo:</p>
 <p><img alt="Comparação do efeito de diversas medidas sobre o risco de contaminação segundo o modelo de Wells-Riley ao longo de 8 horas" src="images/Compara%C3%A7%C3%A3o%20do%20efeito%20de%20diversas%20medidas%20sobre%20o%20risco%20de%20contamina%C3%A7%C3%A3o%20segundo%20o%20modelo%20de%20Wells-Riley%20ao%20longo%20de%208%20horas.png" /></p>
-<p>Como já citado, isso é apenas um ambiente hipotético e nenhumA intenção é subsidiar a discussão sobre o impacto das medidas possíveis.</p>
+<p>Como já citado, isso é apenas um ambiente hipotético e a intenção é subsidiar a discussão sobre o impacto das medidas possíveis. Para tanto foram destacados os efeitos da utilização de N95 por todos os indivíduos e a utilização de purificadores capazes de realizar 12 trocas de ar completas por hora.</p>
+<p>Percebe-se um efeito mitigador de risco mais substancial das máscaras N95 utilizadas por ambos do que qualquer outra medida. Abaixo consta um detalhamento em relação ao momento <span class="arithmatex">\(t = 3h\)</span> para ilustrar a diferença do impacto de cada medida.</p>
+<p><img alt="Detalhamento do risco de contaminação após 3h" src="images/Detalhamento%20do%20risco%20de%20contamina%C3%A7%C3%A3o%20ap%C3%B3s%203h.png" /></p>
+<p>Sem nenhuma medida, este ambiente hipotético ofereceria 63.21% de risco de contaminação aos indivíduos nele presentes após 3h de permanência. A utilização de máscaras N95 por todos os indivíduos reduziria para 0.25% o risco de contaminação, e a adoção de purificadores com filtros HEPA realizando 12 filtragens completas durante essas 3h reduziria o risco de contaminação para 7.4%.</p>
+<p>Pode-se perceber uma diferença muito significativa entre a não-adoção de medidas mitigadoras e a adoção de medidas básicas no risco de contágio. O mesmo ocorre com a máscara cirúrgica utilizada por ambos com redução do risco para 3.92% ou para quando somente os indivíduos não contaminados utilizam a máscara (útil para avaliar o contexto de atendimento em saúde, onde os pacientes podem estar contaminados) obtendo redução da chance de contaminação para 4.88% e 18.13% com máscaras N95 e cirúrgicas respectivamente.</p>
+<p>A presença de purificadores tem efeito teórico idêntico à ventilação e sua inclusão em detrimento da ventilação (natural e mecânica) em si foi devido à limitação de implementação de ventilaçãoem diversos ambientes que foram concebidos de forma pouco atenta a este quesito. Nestes casos, seja pelo aumento da carga térmica ou por restrições estruturais do espaço, a inclusão de ventilação é muito onerosa. Em contrapartida, o purificador é distribuido normalmente em formato portátil e com baixo consumo, sendo facilmente integrado ao ambiente e à infraestrutura elétrica. </p>
+<p>Feito o esclarecimento sobre a presença do purificador, nota-se que sua influência sobre os riscos de contaminação tem uma magnitude menor do que as máscaras considerando até 12 trocas/passagens por hora (que é o valor preconizado pela OMS em ambientes de saúde com intensa geração de aerossol na presente data). Na imagem abaixo está a redução relativa percentual de cada uma das medidas para o mesmo período no tempo <span class="arithmatex">\(t = 3h\)</span>.</p>
+<p><img alt="Redução percentual do risco de contaminação em comparação a não adotar nenhuma medida" src="images/Redu%C3%A7%C3%A3o%20percentual%20do%20risco%20de%20contamina%C3%A7%C3%A3o%20em%20compara%C3%A7%C3%A3o%20a%20n%C3%A3o%20adotar%20nenhuma%20medida.png" /></p>
+<p>A redução percentual da utilização por todos os presentes de máscaras N95 foi de 99.52%, enquanto do purificador com filtro HEPA foi de 85.97%.</p>
+<p>Essa diferença é derivada da influência de cada um dos dois elementos. Enquanto os purificadores (assim como a ventilação de forma geral) atua sobre o ambiente com um efeito de razão <span class="arithmatex">\(1/Q\)</span>, as máscaras tem uma influência quadrática quando todos os indivíduos as utilizam <span class="arithmatex">\((1 - \eta_I)(1 - \eta_p)\)</span>, que no caso das eficiências de filtragem serem as mesmas, se transformam em <span class="arithmatex">\((1 - \eta_{geral})^2\)</span>. </p>
+<p>Em termos físicos isso se explica porque a filtragem/ventilação atua na remoção de contaminantes posteriormente à sua inserção no ambiente e precisa ser capaz de processar todo o ar para alcançar seu propósito, as máscaras atuam retendo os contaminantes direto na fonte/receptor. Matematicamente não há nenhum elemento que tenha o poder mitigador equivalente ao uso de máscaras, sendo valiosas aliadas na promoção de segurança e com um baixo custo.</p>
+<p>Acrescentando alguns detalhes a mais na simulação para uma breve discussão de custos: Para um ambiente nas mesmas condições das simulações apresentadas, mas com área de 60m² e altura 3m (totalizando 180m³) com 20 ocupantes permanecendo por 3 horas no ambiente, seriam necessárias 4 unidades purificadoras como as descritas na seção <a href="#custo_dos_insumos">Custo dos insumos</a> para alcançar 12 trocas/horas ao custo de R$19.200 para alcançar uma redução de 85% do risco de contaminação. Com este valor seria possível adquirir 3.840 máscaras N95, montante suficiente para 192 dias de uso sem repetição e oferecendo uma redução de 99.52% no risco de contaminação.</p>
+<p>Por mais que seja bastante tentador considerar as máscaras como uma bala de prata, na realidade nem sempre as condições permitem uma conclusão tão fácil, pois os cenários são geralmente mais complexos. Por exemplo:</p>
+<ul>
+<li>Nem sempre será possível que todos os ocupantes do espaço utilizem N95, como é o caso de atendimentos odontológicos.</li>
+<li>Os órgãos públicos no geral ainda enfrentam ainda dificuldades na aquisição de máscaras N95</li>
+<li>É altamente imprudente expor os ocupantes a altas cargas de contaminante contando apenas com uma medida mitigadora, pois qualquer fresta na N95 representa uma passagem direta do contaminante para o usuário sem passar pelo elemento filtrante</li>
+</ul>
+<p>Portanto, é importante tratar os cenários apresentados com a devida parcimônia e ter em mente que cada caso demanda uma análise própria devido às suas particularidades.</p>
+<h2 id="aplicacao_comparativa_do_modelo_de_wells-riley_e_distanciamento_social_a_ambientes_da_ufjf-gv">Aplicação comparativa do modelo de Wells-Riley e distanciamento social a ambientes da UFJF-GV<a class="headerlink" href="#aplicacao_comparativa_do_modelo_de_wells-riley_e_distanciamento_social_a_ambientes_da_ufjf-gv" title="Permanent link">&para;</a></h2>
                 
               
               
