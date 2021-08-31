@@ -338,6 +338,21 @@
                 
                 
                 <h1 id="introducao">Introdução<a class="headerlink" href="#introducao" title="Permanent link">&para;</a></h1>
+<p>O cenário atual de pandemia vem demandando adequação de espaços de uso coletivo para manutenção da segurança dos ocupantes, algo distante de ser trivial devido à necessidade de cômputo de diversas variáveis como número de ocupantes, tempo de exposição, condições de ventilação, atividade dos ocupantes (que influencia quanto exalam e inspiram eventuais contaminantes) para se obter respostas sobre as condições de segurança dos ambientes.</p>
+<p>O que se propõe é a revisão do protocolo de segurança atual baseado essencialmente num paradigma de que existem sítios  no entorno de indivíduos capazes de delimitar o risco de contágio como na imagem esquemática abaixo. </p>
+<p><img alt="Distanciamento social simples" src="images/sala-distanciamento-simples.png" /></p>
+<p>No entanto as condições reais de transmissão da doença se aproximam mais à imagem abaixo, onde cada indivíduo é um ponto gerador e consumidor de particulas altamente dinâmicas capazes saturar ambientes, preencher espaços, transpor distâncias e também capazes de tornar o que, à vista do protocolo atual, seria um ambiente seguro com apenas poucos indivíduos em ambientes com elevado risco de contágio.</p>
+<p><img alt="Animacao particulas" src="videos/Animacao%20particulas_1.gif" /></p>
+<p>A principal deficiência do protocolo atual é a falta de trato quantitativo para as principais variáveis determinantes da dispersão da COVID19 como as citadas no início do texto, por isso propõe-se a substituição do seu paradigma por outro baseado no modelo de Wells-Riley.</p>
+<p>Desta forma é possível construir uma abordagem quantitativa validada, simplificada e estruturada para analisar os aspectos referentes à biossegurança nos ambientes da universidade, transpondo as limitações dos protocolos baseados na concepção de que a transmissão predominante do SARS-CoV-2 se dá por partículas balísticas e superfícies, que tem como principal medida o distanciamento social. Ao se considerar as métricas possíveis da forma atual de implementação de biossegurança uma série de questões ficam sem uma resposta e acabam demandando uma abordagem qualitativa, baseada em critérios um tanto personificados, como:</p>
+<ul>
+<li>Qual influência do tipo de máscaras sobre o risco dos ambientes? As máscaras de tecido são suficientes para o ambiente X ou é necessário uma máscara N95/N99? Do ponto de vista financeiro, qual a relação de retorno sobre investimento de cada tipo de máscara?</li>
+<li>Qual a influência do uso de equipamentos purificadores de ar em ambientes com baixa renovação e/ou dotados de condicionadores de ar unitários (AC split e AC de janela)? Um ambiente quente pode funcionar climatizado se possuir purificadores? E quanto aos ambientes com janelas inexistentes ou fixas?</li>
+<li>Qual a influência do tempo de permanência sobre o risco de contaminação? Qual a diferença de segurança entre atividades de 4h de duração para atividades de 3h, 2h, 1h e 15min?</li>
+<li>Como viabilizar atividades que em sua essência demandam contatos mais próximos do que o preconizado pelo distanciamento social? Como atendimentos odontológicos, médicos e tantos outros que demandam contato físico entre pessoas?</li>
+<li>Como viabilizar atividades que envolvem movimentação de pessoas entre diversos postos de trabalho e ambientes, como atividades administrativas?</li>
+<li>Como viabilizar atividades em ambientes que possuem infraestrutura diferente de uma sala de aula, como laboratórios de bancadas fixas ou que de alguma forma não permitam a reorganização dos postos?</li>
+</ul>
 <h2 id="apresentacao_da_equacao_de_wells-riley">Apresentação da equação de Wells-Riley<a class="headerlink" href="#apresentacao_da_equacao_de_wells-riley" title="Permanent link">&para;</a></h2>
 <p>A equação de Wells-Riley é um modelo epidemiológico que captura uma série de fatores relacionados à transmissão de doenças por via aérea num formato simples que pode ser facilmente processado em planilhas e até mesmo em calculadoras científicas. </p>
 <p><span class="arithmatex">\(P = 1 - {\rm e}^{(-Iqpt/Q)}\)</span></p>
@@ -358,15 +373,6 @@
 </ul>
 <p>Essas pequenas alterações são capazes de criar um mecanismo para aferir o impacto de máscaras e diversas formas de tratamento do ar como pode ser visto abaixo. É possível estimar até mesmo o impacto teórico de investimentos diversos (como será apresentado no tópico <a href="#mascaras_vs_ventilacao">Máscaras vs ventilação</a>)</p>
 <p><span class="arithmatex">\(P = 1 - {\rm e}({\frac{-Iqpt(1 - \eta_I)(1 - \eta_p)}{\alpha_{vent} + \alpha_{natural} + \alpha_{filtro}}})\)</span></p>
-<p>Desta forma é possível construir uma abordagem quantitativa validada, simplificada e estruturada para analisar os aspectos referentes à biossegurança nos ambientes da universidade, transpondo as limitações dos protocolos baseados na concepção de que a transmissão predominante do SARS-CoV-2 se dá por partículas balísticas e superfícies, que tem como principal medida o distanciamento social. Ao se considerar as métricas possíveis da forma atual de implementação de biossegurança uma série de questões ficam sem uma resposta e acabam demandando uma abordagem qualitativa, baseada em critérios um tanto personificados, como:</p>
-<ul>
-<li>Qual influência do tipo de máscaras sobre o risco dos ambientes? As máscaras de tecido são suficientes para o ambiente X ou é necessário uma máscara N95/N99? Do ponto de vista financeiro, qual a relação de retorno sobre investimento de cada tipo de máscara?</li>
-<li>Qual a influência do uso de equipamentos purificadores de ar em ambientes com baixa renovação e/ou dotados de condicionadores de ar unitários (AC split e AC de janela)? Um ambiente quente pode funcionar climatizado se possuir purificadores? E quanto aos ambientes com janelas inexistentes ou fixas?</li>
-<li>Qual a influência do tempo de permanência sobre o risco de contaminação? Qual a diferença de segurança entre atividades de 4h de duração para atividades de 3h, 2h, 1h e 15min?</li>
-<li>Como viabilizar atividades que em sua essência demandam contatos mais próximos do que o preconizado pelo distanciamento social? Como atendimentos odontológicos, médicos e tantos outros que demandam contato físico entre pessoas?</li>
-<li>Como viabilizar atividades que envolvem movimentação de pessoas entre diversos postos de trabalho e ambientes, como atividades administrativas?</li>
-<li>Como viabilizar atividades em ambientes que possuem infraestrutura diferente de uma sala de aula, como laboratórios de bancadas fixas ou que de alguma forma não permitam a reorganização dos postos?</li>
-</ul>
 <p>Apesar dos benefícios apresentados, o modelo de Wells-Riley faz uma série de simplificações para conseguir se manter simples, como:</p>
 <ul>
 <li><strong>O modelo não faz nenhuma consideração sobre a dinâmica de contaminação por superfícies ou gotículas maiores/partículas balísticas.</strong></li>
