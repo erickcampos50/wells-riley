@@ -556,10 +556,9 @@
 <li>O paciente será considerado o infector (<span class="arithmatex">\(q = 72 quantas/h\)</span>)</li>
 <li>A atividade respiratória dos atendentes será considerada como quem faz exercício leve (<span class="arithmatex">\(p = 1.38 m³/h\)</span>)</li>
 </ul>
-<p>** Obs1: Os valores de quanta viral e atividade respiratória são atualizados constantemente em função de novos estudos e também das variáveis virais. Os valores atuais foram extraidos do <a href="https://indoor-covid-safety.herokuapp.com/apps/advanced?units=metric">MIT</a> para variante original da COVID19 
-Obs2: Máscaras cirúrgicas tem ajuste frouxo, o que permite passagem sem filtragem de muito contaminante pelas frestas. Por isso ao utiliza-las é necessário utilizar algum recurso para melhorar o ajuste, senão ocorre como na imagem de captação de infravermelho abaixo:</p>
-<p><img alt="Vazamento pela máscara" src="videos/Mascara%20frouxa%20video.gif" />
-**</p>
+<p><strong> Obs1: Os valores de quanta viral e atividade respiratória são atualizados constantemente em função de novos estudos e também das variáveis virais. Os valores atuais foram extraidos do <a href="https://indoor-covid-safety.herokuapp.com/apps/advanced?units=metric">MIT</a> para variante original da COVID19</strong></p>
+<p><strong>Obs2: Máscaras cirúrgicas tem ajuste frouxo, o que permite passagem sem filtragem de muito contaminante pelas frestas. Por isso ao utiliza-las é necessário utilizar algum recurso para melhorar o ajuste, senão ocorre como na imagem de captação de infravermelho abaixo:</strong></p>
+<p><img alt="Vazamento pela máscara" src="videos/Mascara%20frouxa%20video.gif" /></p>
 <p><span class="arithmatex">\(P = 1 - {\rm e}({\frac{-Iqpt(1 - \eta_I)(1 - \eta_p)}{\alpha_{vent} + \alpha_{natural} + \alpha_{filtro}}}) = 1 - {\rm e}{\frac{-1*72*1.38*1(1-0)(1-0.8)}{321}} = 0.0600292696 = 6\%\)</span></p>
 <p>Nas condições apresentadas, o risco de uma nova contaminação é de 6%. Como já citado, é possível identificar o número esperado de novos casos a partir da equivalência da equação de Wells-Riley, com <span class="arithmatex">\(P = \frac{C}{S}\)</span>. Como o total de indivíduos susceptíveis é 3 (<span class="arithmatex">\(S = 3\)</span>) e o risco identificado é de 6% (<span class="arithmatex">\(P = 0.06\)</span>), a expectativa é que tenhamos:</p>
 <p><span class="arithmatex">\(P = \frac{C}{S} = 0.06 = \frac{C}{3} =&gt; C = 0.0600292696*3 = 0,180087809\)</span> </p>
