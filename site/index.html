@@ -1,0 +1,666 @@
+
+<!doctype html>
+<html lang="pt" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="canonical" href="https://erickcampos50.github.io/wells-riley/">
+      
+      <link rel="icon" href="assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.2.2, mkdocs-material-7.2.4">
+    
+    
+      
+        <title>Protocolo de biossegurança norteado pela equação de Wells-Riley</title>
+      
+    
+    
+      <link rel="stylesheet" href="assets/stylesheets/main.f7f47774.min.css">
+      
+        
+        <link rel="stylesheet" href="assets/stylesheets/palette.3f5d1f46.min.css">
+        
+          
+          
+          <meta name="theme-color" content="#2094f3">
+        
+      
+    
+    
+    
+      
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>:root{--md-text-font-family:"Roboto";--md-code-font-family:"Roboto Mono"}</style>
+      
+    
+    
+    
+    
+      
+
+
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="blue" data-md-color-accent="">
+  
+    
+    <script>function __prefix(e){return new URL(".",location).pathname+"."+e}function __get(e,t=localStorage){return JSON.parse(t.getItem(__prefix(e)))}</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#proposta_de_construcao_de_um_protocolo_de_biosseguranca_norteado_pelo_modelo_de_wells-rley" class="md-skip">
+          Ir para o conteúdo
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="." title="Protocolo de biossegurança norteado pela equação de Wells-Riley" class="md-header__button md-logo" aria-label="Protocolo de biossegurança norteado pela equação de Wells-Riley" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Protocolo de biossegurança norteado pela equação de Wells-Riley
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Ver página inicial
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+    
+      <div class="md-header__source">
+        
+<a href="https://github.com/erickcampos50/wells-riley/" title="Ir ao repositório" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    erick-campos/wells-riley
+  </div>
+</a>
+      </div>
+    
+  </nav>
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="." title="Protocolo de biossegurança norteado pela equação de Wells-Riley" class="md-nav__button md-logo" aria-label="Protocolo de biossegurança norteado pela equação de Wells-Riley" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    Protocolo de biossegurança norteado pela equação de Wells-Riley
+  </label>
+  
+    <div class="md-nav__source">
+      
+<a href="https://github.com/erickcampos50/wells-riley/" title="Ir ao repositório" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    erick-campos/wells-riley
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Ver página inicial
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="." class="md-nav__link md-nav__link--active">
+        Ver página inicial
+      </a>
+      
+        
+<nav class="md-nav md-nav--secondary" aria-label="Índice">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Índice
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#introducao" class="md-nav__link">
+    Introdução
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#apresentacao_da_equacao_de_wells-riley" class="md-nav__link">
+    Apresentação da equação de Wells-Riley
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#mascaras_vs_ventilacao" class="md-nav__link">
+    Máscaras vs ventilação
+  </a>
+  
+    <nav class="md-nav" aria-label="Máscaras vs ventilação">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#custo_dos_insumos" class="md-nav__link">
+    Custo dos insumos
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#comparacao_da_reducao_do_risco_de_contaminacao_apos_diversas_medidas" class="md-nav__link">
+    Comparação da redução do risco de contaminação após diversas medidas
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#aplicacao_comparativa_do_modelo_de_wells-riley_e_distanciamento_social_a_ambientes_da_ufjf-gv" class="md-nav__link">
+    Aplicação comparativa do modelo de Wells-Riley e distanciamento social a ambientes da UFJF-GV
+  </a>
+  
+    <nav class="md-nav" aria-label="Aplicação comparativa do modelo de Wells-Riley e distanciamento social a ambientes da UFJF-GV">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#clinica_odontologica_-_funorte" class="md-nav__link">
+    Clínica odontológica - Funorte
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#conclusao" class="md-nav__link">
+    Conclusão
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#referencias" class="md-nav__link">
+    Referências
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="Índice">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Índice
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#introducao" class="md-nav__link">
+    Introdução
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#apresentacao_da_equacao_de_wells-riley" class="md-nav__link">
+    Apresentação da equação de Wells-Riley
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#mascaras_vs_ventilacao" class="md-nav__link">
+    Máscaras vs ventilação
+  </a>
+  
+    <nav class="md-nav" aria-label="Máscaras vs ventilação">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#custo_dos_insumos" class="md-nav__link">
+    Custo dos insumos
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#comparacao_da_reducao_do_risco_de_contaminacao_apos_diversas_medidas" class="md-nav__link">
+    Comparação da redução do risco de contaminação após diversas medidas
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#aplicacao_comparativa_do_modelo_de_wells-riley_e_distanciamento_social_a_ambientes_da_ufjf-gv" class="md-nav__link">
+    Aplicação comparativa do modelo de Wells-Riley e distanciamento social a ambientes da UFJF-GV
+  </a>
+  
+    <nav class="md-nav" aria-label="Aplicação comparativa do modelo de Wells-Riley e distanciamento social a ambientes da UFJF-GV">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#clinica_odontologica_-_funorte" class="md-nav__link">
+    Clínica odontológica - Funorte
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#conclusao" class="md-nav__link">
+    Conclusão
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#referencias" class="md-nav__link">
+    Referências
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                  <a href="https://github.com/erickcampos50/wells-riley/edit/master/docs/index.md" title="Editar esta página" class="md-content__button md-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
+                  </a>
+                
+                
+                <h1 id="proposta_de_construcao_de_um_protocolo_de_biosseguranca_norteado_pelo_modelo_de_wells-rley">Proposta de construção de um protocolo de biossegurança norteado pelo modelo de Wells-Rley<a class="headerlink" href="#proposta_de_construcao_de_um_protocolo_de_biosseguranca_norteado_pelo_modelo_de_wells-rley" title="Permanent link">&para;</a></h1>
+<h2 id="introducao">Introdução<a class="headerlink" href="#introducao" title="Permanent link">&para;</a></h2>
+<p>O cenário atual de pandemia vem demandando adequação de espaços de uso coletivo para manutenção da segurança dos ocupantes, algo distante de ser trivial devido à necessidade de cômputo de diversas variáveis como número de ocupantes, tempo de exposição, condições de ventilação, atividade dos ocupantes (que influencia quanto exalam e inspiram eventuais contaminantes) para se obter respostas sobre as condições de segurança dos ambientes.</p>
+<p>O que se propõe é a revisão do protocolo de biosegurança atual baseado essencialmente num paradigma de que existem sítios  no entorno de indivíduos capazes de delimitar o risco de contágio como na imagem esquemática abaixo. </p>
+<p><img alt="Distanciamento social simples" src="images/sala-distanciamento-simples.png" /></p>
+<p>No entanto as condições reais de transmissão da doença se aproximam mais à imagem abaixo, onde cada indivíduo é um ponto gerador e consumidor de particulas altamente dinâmicas capazes saturar ambientes, preencher espaços, transpor distâncias e também capazes de tornar o que, à vista do protocolo atual, seria um ambiente seguro com apenas poucos indivíduos em ambientes com elevado risco de contágio.</p>
+<p><img alt="Animacao particulas" src="videos/Simulacao%20sala%20de%20aula.gif" /></p>
+<p>A principal deficiência do protocolo atual é a falta de trato quantitativo para as principais variáveis determinantes da dispersão da COVID19 como as citadas no início do texto, por isso propõe-se a substituição do seu paradigma por outro baseado no modelo de Wells-Riley.</p>
+<p><strong>Este texto se propõe a apresentar os motivos para substituição do modelo atual de protocolo de biossegurança para o um modelo que se baseia na equação de Wells-Riley, que relaciona tempo de exposição, atividades realizadas pelos indivíduos e medidas santizantes com o o risco de uma novo contágio.</strong></p>
+<p>Desta forma será possível construir uma abordagem quantitativa validada, simplificada e estruturada para analisar os aspectos referentes à biossegurança nos ambientes da universidade. Transpondo as limitações dos protocolos baseados na concepção de que a transmissão predominante do SARS-CoV-2 se dá por partículas balísticas e superfícies, que tem como principal medida o distanciamento social. </p>
+<p>Os protocolos fundamentados no distanciamento social não são instrumentados para prover respostas para questões como:</p>
+<ul>
+<li>Qual influência do tipo de máscaras sobre o risco dos ambientes? As máscaras de tecido são suficientes para o ambiente X ou é necessário uma máscara N95/N99? Do ponto de vista financeiro, qual a relação de retorno sobre investimento de cada tipo de máscara?</li>
+<li>Qual a influência do uso de equipamentos purificadores de ar em ambientes com baixa renovação e/ou dotados de condicionadores de ar unitários (AC split e AC de janela)? Um ambiente quente pode funcionar climatizado se possuir purificadores? E quanto aos ambientes com janelas inexistentes ou fixas?</li>
+<li>Qual a influência do tempo de permanência sobre o risco de contaminação? Qual a diferença de segurança entre atividades de 4h de duração para atividades de 3h, 2h, 1h e 15min?</li>
+<li>Como viabilizar atividades que em sua essência demandam contatos mais próximos do que o preconizado pelo distanciamento social? Como atendimentos odontológicos, médicos e tantos outros que demandam contato físico entre pessoas?</li>
+<li>Como viabilizar atividades que envolvem movimentação de pessoas entre diversos postos de trabalho e ambientes, como atividades administrativas?</li>
+<li>Como viabilizar atividades em ambientes que possuem infraestrutura diferente de uma sala de aula, como laboratórios de bancadas fixas ou que de alguma forma não permitam a reorganização dos postos?</li>
+</ul>
+<p>Devido ao fato destas questões importantes e tantas outras inciderem sobre uma zona cinzenta de aplicação do protocolo atual têm-se a aplicação subjetiva de critérios diversos para suprir as lacunas, o que não é uma boa prática para estas situações. A incorporação do modelo de Wells-Riley no cerno do protocolo de biossegurança trará o benefício de um instrumento de análise mais completo e responsivo às demandas da universidade.</p>
+<p>Nesta proposta de revisão do protocolo atual serão apresentados os seguintes tópicos:</p>
+<ul>
+<li><a href="#apresentacao-de-wells-riley">Apresentação de Wells-Riley</a> - Contém uma apresentação sucinta da equação básica do modelo de Wells-Riley</li>
+<li><a href="#mascaras-vs-ventilacao">Máscaras vs Ventilação</a> - Um exemplo de aplicação do modelo de Wells-Riley, em que é comparado o efeito da ventilação/filtragem comparado com diversas máscaras nas mesmas condições</li>
+<li><a href="#aplicacao_comparativa_do_modelo_de_wells-riley_e_distanciamento_social_a_ambientes_da_ufjf-gv">Aplicação comparativa do modelo de Wells-Riley e distanciamento social a ambientes da UFJF-GV</a> - Nesta seção é feita a aplicação do protocolo em ambientes da UFJF-GV para discutir sua forma de aplicação e diferenças para o protocolo atual</li>
+<li><a href="#conclusao">Conclusão</a> - Um apanhado dos conteúdos apresentados</li>
+</ul>
+<h2 id="apresentacao_da_equacao_de_wells-riley">Apresentação da equação de Wells-Riley<a class="headerlink" href="#apresentacao_da_equacao_de_wells-riley" title="Permanent link">&para;</a></h2>
+<p>A equação de Wells-Riley é um modelo epidemiológico que captura uma série de fatores relacionados à transmissão de doenças por via aérea num formato simples que pode ser facilmente processado em planilhas e até mesmo em calculadoras científicas. Apesar da simplicidade, este modelo faz parte da formulação de modelagens da transmissão da COVID19 desenvolvidas pelo <a href="https://indoor-covid-safety.herokuapp.com/">MIT</a> e <a href="https://cara.web.cern.ch/">CERN</a> (os links apresentados são de calculadoras avançadas que valem a pena ser conhecidas).</p>
+<p><span class="arithmatex">\(P = 1 - {\rm e}^{(-Iqpt/Q)}\)</span></p>
+<p>Em que, <span class="arithmatex">\(P(\%)\)</span> representa a chance de contaminação em função do número de indivíduos contaminados (infrectores) <span class="arithmatex">\(I(un)\)</span>, do total de contaminantes exalado pelos infectores <span class="arithmatex">\(q(h^-1)\)</span>, pela atividade respiratória dos indivíduos expostos à contaminação (susceptíveis) <span class="arithmatex">\(p(m³/h)\)</span>, pela passagem do tempo <span class="arithmatex">\(t(h)\)</span> e finalmente <span class="arithmatex">\(Q(m^3/h)\)</span> a taxa de remoção de contaminantes. Sendo possível, a partir da seguinte equivalência estabelecer o total de novos casos esperados, onde <span class="arithmatex">\(C\)</span> é o número esperado de novos casos e <span class="arithmatex">\(S\)</span> o total de indivíduos susceptíveis:</p>
+<p><span class="arithmatex">\(P = \frac{C}{S}\)</span> </p>
+<p>Trata-se de um modelo extensamente utilizado desde sua introdução em 1978 até os dias de hoje, sendo também validado e expansível (permite inclusão de novos fatores para aprimorar o tratamento dos cenários), como pode ser visto a seguir:</p>
+<ul>
+<li><span class="arithmatex">\(Q\)</span>, pode incorporar o somatório de todos os elementos que reduzem a concentração de contaminante no ar, como <span class="arithmatex">\(\alpha_{vent}\)</span> que é o fluxo de ar proveniente de um sistema de ventilação, <span class="arithmatex">\(\alpha_{natural}\)</span>, fluxo da ventilação natural, <span class="arithmatex">\(\alpha_{filtro}\)</span> fluxo de ar fitrado (conhecido como <em>CADR</em>) de filtros purificadores de ar. Há a possibilidade de incorporar o efeito de lâmpadas UVC em sistemas denominados <em>Upper room</em> que apesar de não atuar pela inserção/passagem de ar, são capazes de neutralizar contaminantes numa taxa volumétrica conhecida.</li>
+</ul>
+<p><span class="arithmatex">\(Q = \alpha_{vent} + \alpha_{natural} + \alpha_{filtro}\)</span></p>
+<ul>
+<li>
+<p><span class="arithmatex">\(q\)</span>, que representa o quanta viral exalado pelo infector pode incoporar o impacto filtrante da presença de diversos tipos de máscara com um fator atenuador <span class="arithmatex">\((1 - \eta_I)\)</span>, onde <span class="arithmatex">\(\eta_I\)</span> representa a eficiência de filtragem das máscaras dos utilizadas pelos infectores</p>
+</li>
+<li>
+<p><span class="arithmatex">\(p\)</span>, que representa a atividade respiratória dos indivíduos susceptíveis pode incoporar o impacto filtrante da presença de diversos tipos de máscara com um fator atenuador <span class="arithmatex">\((1 - \eta_p)\)</span>, onde <span class="arithmatex">\(\eta_p\)</span> representa a eficiência de filtragem das máscaras dos utilizadas pelos suscepíveis</p>
+</li>
+</ul>
+<p>Essas pequenas alterações são capazes de criar um mecanismo para aferir o impacto de máscaras e diversas formas de tratamento do ar como pode ser visto abaixo. É possível estimar até mesmo o impacto teórico de investimentos diversos (como será apresentado no tópico <a href="#mascaras_vs_ventilacao">Máscaras vs ventilação</a>)</p>
+<p><span class="arithmatex">\(P = 1 - {\rm e}({\frac{-Iqpt(1 - \eta_I)(1 - \eta_p)}{\alpha_{vent} + \alpha_{natural} + \alpha_{filtro}}})\)</span></p>
+<p>Apesar dos benefícios apresentados, o modelo de Wells-Riley faz uma série de simplificações para conseguir se manter simples, como:</p>
+<ul>
+<li><strong>O modelo não faz nenhuma consideração sobre a dinâmica de contaminação por superfícies ou gotículas maiores/partículas balísticas.</strong></li>
+<li>O ar no interior de cada ambiente é homogêneo, isto é, quando qualquer quantidade de contaminante é exalada, o montante instantaneamente é distribuido por todo o ar</li>
+<li>A infecção ocorre sempre quando um certo limiar de contaminante é aspirado</li>
+<li>Infectores exalam contaminantes em doses constantes durante o período de permanência/interação nos ambientes</li>
+</ul>
+<p>Conforme outros parâmetros, como o decaimento do vírus, dimensão terminal das partículas de aerossol em função das condições ambientais, outras simplificações precisam ser feitas. A complexidade da dinâmica dos fluidos (ar e aerossol) que raras vezes se comporta de forma homogênea como é considerado no modelo e deve-se ter em mente a máxima da modelagem <em>"essencialmente, todos os modelos estão errados, mas alguns são úteis"</em>, portanto, <strong>deve-se evitar interpretações determinísticas da realidade a partir de um modelo simplificado</strong>.  Apesar disso, o modelo oferece uma evolução substancial em relação ao patamar atual de compreensão da dinâmica das variáveis mais importantes dos ambientes (físicas e comportamentais) em relação à COVID19.</p>
+<h2 id="mascaras_vs_ventilacao">Máscaras vs ventilação<a class="headerlink" href="#mascaras_vs_ventilacao" title="Permanent link">&para;</a></h2>
+<p>Este tópico foi elaborado com o intuito de apresentar uma visão comparativa dos resultados possíveis ao incoporar medidas mitigadoras do risco de contaminação, que são máscaras e ventilação. Será demonstrado, a partir do modelo de Wells-Riley, como cada medida impacta no risco de contaminação e uma breve discussão de valores.</p>
+<p>É importante destacar que <strong>nenhuma medida deve ser excluida</strong> dos planos de adequação, este não é o intuito da discussão. O intuito é apresentar uma perspectiva de racionalização do uso de recursos em função da situação financeira delicada da universidade.</p>
+<h3 id="custo_dos_insumos">Custo dos insumos<a class="headerlink" href="#custo_dos_insumos" title="Permanent link">&para;</a></h3>
+<p>Estes são os custos levantados na data atual dos seguintes itens:</p>
+<table>
+<thead>
+<tr>
+<th>Item</th>
+<th>Valor (R$/un)</th>
+<th align="right">Filtragem</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Purificador com filtro Hepa H13/H14. Vazão 500 m³/h.*</td>
+<td>4.800,00</td>
+<td align="right">500 m³/h</td>
+</tr>
+<tr>
+<td>Máscara PFF2/N95                                   **</td>
+<td>5,00</td>
+<td align="right">95%</td>
+</tr>
+<tr>
+<td>Máscara cirúrgica                                  **</td>
+<td>0,70</td>
+<td align="right">80%</td>
+</tr>
+<tr>
+<td>Máscara de tecido convencional                     **</td>
+<td>4,00</td>
+<td align="right">50%</td>
+</tr>
+<tr>
+<td>* Item cotado em jun/2021; ** Valores obtidos em consulta simples na internet</td>
+<td></td>
+<td align="right"></td>
+</tr>
+</tbody>
+</table>
+<h3 id="comparacao_da_reducao_do_risco_de_contaminacao_apos_diversas_medidas">Comparação da redução do risco de contaminação após diversas medidas<a class="headerlink" href="#comparacao_da_reducao_do_risco_de_contaminacao_apos_diversas_medidas" title="Permanent link">&para;</a></h3>
+<p>Foi feita uma análise para um ambiente hipotético para ilustrar o efeito de diferentes medidas mitigadoras com algumas variações que eventualmetne suscitam dúvidas e também do tempo, conforme lista abaixo:</p>
+<ul>
+<li>Nenhuma medida adotada, todos os indivíduos sem máscara</li>
+<li>Todos os indivíduos utilizando N95</li>
+<li>Somente os indivíduos susceptíveis utilizando N95</li>
+<li>Todos os indivíduos utilizando máscara cirúrgica</li>
+<li>Somente os indivíduos susceptíveis utilizando máscara cirúrgica</li>
+<li>Inclusão de purificador com filtro HEPA realizando UMA troca completa do ar por hora</li>
+<li>Inclusão de purificador com filtro HEPA realizando SEIS trocas completas do ar por hora</li>
+<li>Inclusão de purificador com filtro HEPA realizando DOZE trocas completas do ar por hora</li>
+</ul>
+<p>O resultado das simulações podem ser vistas na imagem abaixo:</p>
+<p><img alt="Comparação do efeito de diversas medidas sobre o risco de contaminação segundo o modelo de Wells-Riley ao longo de 8 horas" src="images/Compara%C3%A7%C3%A3o%20do%20efeito%20de%20diversas%20medidas%20sobre%20o%20risco%20de%20contamina%C3%A7%C3%A3o%20segundo%20o%20modelo%20de%20Wells-Riley%20ao%20longo%20de%208%20horas.png" /></p>
+<p>Como já citado, isso é apenas um ambiente hipotético e a intenção é subsidiar a discussão sobre o impacto das medidas possíveis. Para tanto foram destacados os efeitos da utilização de N95 por todos os indivíduos e a utilização de purificadores capazes de realizar 12 trocas de ar completas por hora.</p>
+<p>Percebe-se um efeito mitigador de risco mais substancial das máscaras N95 utilizadas por ambos do que qualquer outra medida. Abaixo consta um detalhamento em relação ao momento <span class="arithmatex">\(t = 3h\)</span> para ilustrar a diferença do impacto de cada medida.</p>
+<p><img alt="Detalhamento do risco de contaminação após 3h" src="images/Detalhamento%20do%20risco%20de%20contamina%C3%A7%C3%A3o%20ap%C3%B3s%203h.png" /></p>
+<p>Sem nenhuma medida, este ambiente hipotético ofereceria 63.21% de risco de contaminação aos indivíduos nele presentes após 3h de permanência. A utilização de máscaras N95 por todos os indivíduos reduziria para 0.25% o risco de contaminação, e a adoção de purificadores com filtros HEPA realizando 12 filtragens completas durante essas 3h reduziria o risco de contaminação para 7.4%.</p>
+<p>Pode-se perceber uma diferença muito significativa entre a não-adoção de medidas mitigadoras e a adoção de medidas básicas no risco de contágio. O mesmo ocorre com a máscara cirúrgica utilizada por ambos com redução do risco para 3.92% ou para quando somente os indivíduos não contaminados utilizam a máscara (útil para avaliar o contexto de atendimento em saúde, onde os pacientes podem estar contaminados) obtendo redução da chance de contaminação para 4.88% e 18.13% com máscaras N95 e cirúrgicas respectivamente.</p>
+<p>A presença de purificadores tem efeito teórico idêntico à ventilação e sua inclusão em detrimento da ventilação (natural e mecânica) em si foi devido à limitação de implementação de ventilaçãoem diversos ambientes que foram concebidos de forma pouco atenta a este quesito. Nestes casos, seja pelo aumento da carga térmica ou por restrições estruturais do espaço, a inclusão de ventilação é muito onerosa. Em contrapartida, o purificador é distribuido normalmente em formato portátil e com baixo consumo, sendo facilmente integrado ao ambiente e à infraestrutura elétrica. </p>
+<p>Feito o esclarecimento sobre a presença do purificador, nota-se que sua influência sobre os riscos de contaminação tem uma magnitude menor do que as máscaras considerando até 12 trocas/passagens por hora (que é o valor preconizado pela OMS em ambientes de saúde com intensa geração de aerossol na presente data). Na imagem abaixo está a redução relativa percentual de risco de cada uma das medidas para o mesmo período no tempo <span class="arithmatex">\(t = 3h\)</span>.</p>
+<p><img alt="Redução percentual do risco de contaminação em comparação a não adotar nenhuma medida" src="images/Redu%C3%A7%C3%A3o%20percentual%20do%20risco%20de%20contamina%C3%A7%C3%A3o%20em%20compara%C3%A7%C3%A3o%20a%20n%C3%A3o%20adotar%20nenhuma%20medida.png" /></p>
+<p>A redução percentual do risco devido à utilização por todos os presentes de máscaras N95 foi de 99.52%, enquanto do purificador com filtro HEPA foi de 85.97%.</p>
+<p>Essa diferença é derivada da influência de cada um dos dois elementos. Enquanto os purificadores (assim como a ventilação de forma geral) atua sobre o ambiente com um efeito de razão <span class="arithmatex">\(1/Q\)</span>, as máscaras tem uma influência quadrática quando todos os indivíduos as utilizam <span class="arithmatex">\((1 - \eta_I)(1 - \eta_p)\)</span>, que no caso das eficiências de filtragem serem as mesmas, se transformam em <span class="arithmatex">\((1 - \eta_{geral})^2\)</span>. </p>
+<p>Para ilustrar melhor, veja o impacto de algumas medidas na presença de contaminantes no ambiente (não confundir com o risco de contaminação, porque isso depende também do tempo de exposição):</p>
+<ul>
+<li>Se todos utilizam máscara de tecido com 50% de eficiência (algo que a maior parte das máscaras consegue se estiver bem ajustada) há uma redução de 75% do total de contaminantes no ambiente</li>
+<li>Se todos utilizam máscara cirúrgica com 80% de eficiência há uma redução de 96%</li>
+<li>Se todos utilizam máscara N95 com 95% de eficiência há uma redução de 99,75%</li>
+<li>Se a ventilação ou filtragem do ar aumenta de 1 para 6 trocas/filtragens de ar por hora há uma redução de 83%</li>
+<li>Se a ventilação ou filtragem do ar aumenta de 1 para 12 trocas/filtragens de ar por hora há uma redução de 91.6%</li>
+<li>Se ocorre a combinação de máscaras N95 com aumento de 1 para 6 trocas/filtragens de ar por hora há uma redução de 99.95%</li>
+</ul>
+<p>Em termos físicos isso se explica porque a filtragem/ventilação atua na remoção de contaminantes posteriormente à sua inserção no ambiente e precisa ser capaz de processar todo o ar para alcançar seu propósito, as máscaras atuam retendo os contaminantes direto na fonte/receptor. Matematicamente não há nenhum elemento que tenha o poder mitigador equivalente ao uso de máscaras, sendo valiosas aliadas na promoção de segurança e com um baixo custo.</p>
+<p>Acrescentando alguns detalhes a mais na simulação para uma breve discussão de custos: Para um ambiente nas mesmas condições das simulações apresentadas, mas com área de 60m² e altura 3m (totalizando 180m³) com 20 ocupantes permanecendo por 3 horas no ambiente, seriam necessárias 4 unidades purificadoras como as descritas na seção <a href="#custo_dos_insumos">Custo dos insumos</a> para alcançar 12 trocas/horas ao custo de R$19.200 para alcançar uma redução de 85% do risco de contaminação. Com este valor seria possível adquirir 3.840 máscaras N95, montante suficiente para 192 dias de uso sem repetição e oferecendo uma redução de 99.52% no risco de contaminação.</p>
+<p>Considerando a relação <span class="arithmatex">\(P = C/S\)</span>, numa sala com 20 ocupantes por 3 horas a expectativa é que <span class="arithmatex">\(C = P.S\)</span> inviíduos se contaminem. Se considerarmos o risco de contaminação com uso de purificadores com 12 trocas/hora de 7.4% do exemplo, teremos <span class="arithmatex">\(C = 20.0,074 = 1,48\)</span> indivíduos contaminados neste caso. Se todos utilizarem N95 espera-se <span class="arithmatex">\(C = 20.0,0025 = 0,05\)</span> indivíduos contaminados , isto é, a exposição a contaminante não é suficiente para gerar uma contaminação. </p>
+<p>Por mais que seja bastante tentador considerar as máscaras como uma bala de prata, na realidade nem sempre as condições permitem uma conclusão tão fácil, é importante tratar os cenários apresentados com a devida parcimônia e ter em mente que cada caso demanda uma análise própria devido às suas particularidades, pois os cenários são geralmente mais complexos. Por exemplo:</p>
+<ul>
+<li>Nem sempre será possível que todos os ocupantes do espaço utilizem N95, como é o caso de atendimentos odontológicos.</li>
+<li>Os órgãos públicos no geral ainda enfrentam ainda dificuldades na aquisição de máscaras N95</li>
+<li>É altamente imprudente expor os ocupantes a altas cargas de contaminante contando apenas com uma medida mitigadora, pois qualquer fresta na N95 representa uma passagem direta do contaminante para o usuário sem passar pelo elemento filtrante</li>
+</ul>
+<p>Essas ressalvas não desqualificam a N95, ela se mantém como a medida de proteção mais efetiva do ponto de vista da proteção individual. O que se busca é ressaltar o poder que se deriva de um protocolo baseado de biossegurança baseado no modelo de Wells-Riley. </p>
+<p>O mesmo modelo capaz de apresentar a diferença de uso de vários tipos de máscara e outras abordagens, também é capaz de considerar aspectos múltiplos o protocolo atual não é capaz de cobrir, podendo oferecer embasamento a tomadas de decisão mais seguras para que espaços e usuários fiquem mais protegidos.</p>
+<h2 id="aplicacao_comparativa_do_modelo_de_wells-riley_e_distanciamento_social_a_ambientes_da_ufjf-gv">Aplicação comparativa do modelo de Wells-Riley e distanciamento social a ambientes da UFJF-GV<a class="headerlink" href="#aplicacao_comparativa_do_modelo_de_wells-riley_e_distanciamento_social_a_ambientes_da_ufjf-gv" title="Permanent link">&para;</a></h2>
+<h3 id="clinica_odontologica_-_funorte">Clínica odontológica - Funorte<a class="headerlink" href="#clinica_odontologica_-_funorte" title="Permanent link">&para;</a></h3>
+<p>O ambiente de atendimento clínico, independente do curso, oferece um desafio de análise baseado no protocolo atual porque a atividade exige necessariamente a violação de dois preceitos básicos:</p>
+<ul>
+<li>Atendentes (servidores e estudantes) necessitam permanecer a distâncias muito próximas do paciente, não é possível o distanciamento conforme se preconiza</li>
+<li>O paciente estará sem máscara durante o atendimento</li>
+</ul>
+<p>Mesmo considerando apenas um paciente e uma equipe de atendimento (2 discentes e 1 docente) e considerando a área total do espaço, que é de 107 m², o que a principio permitiria uma atribuição bastante generosa de distanciamento; mesmo realizando a desativação intercalada dos boxes, inevitavelmente haverá uma situação de proximidade extrema entre todos com o paciente retirando a máscara para a execução das atividades clínicas, como exemplificado na imagem abaixo:</p>
+<p><img alt="Movimentacao Funorte" src="videos/Funorte.gif" /></p>
+<p>Como essa é uma situação inerente à atividade clínica odontológica (assim como tantas outras clínicas) surge uma divergência insanável com o protocolo atual. Diante disso é necessário inspecionar as variáveis responsáveis pela transmissão da COVID19 de forma mais aprofundada para ser possível definir medidas adequadas em forma e intensidade para mitigar o risco dos ocupantes.</p>
+<p>Partindo do cenário atual com 1 paciente e 3 atendentes somente. É preciso responder as seguintes questões:</p>
+<ul>
+<li>Qual o risco de transmissão da doença se um deles estiver doente?</li>
+<li>Qual o tempo máximo que pode durar o atendimento?</li>
+<li>Quais as medidas que podem ser utilizadas para minizar o risco de contaminação?</li>
+<li>Qual o número máximo de ocupantes para se manter o risco de contaminação abaixo do risco do suficente para contaminar alguém?</li>
+</ul>
+<p>Parte-se do princípio que todas as medidas de contaminação por goticulas maiores e por contato serão tomadas, como óculos de proteção, gestão de materiais descartáveis, etc. O atendimento odontológico oferece riscos diversos devido à núvem de partículas geradas pelos motores de alta rotação em contato com o paciente, portanto existem protocolos muito anteriores à pandemia que devem ser seguidos.</p>
+<p>Focaremos agora no risco de contaminação por aerossol, que é cerne da discussão atual. Para isso partiremos dos seguintes valores iniciais para alimentar o modelo de Wells-Riley:</p>
+<ul>
+<li>O atendimento durará 1 hora (<span class="arithmatex">\(t = 1h\)</span>)</li>
+<li>Os 3 atendentes estarão com máscaras de tecido com ajuste perfeito e 80% de eficiencia de filtragem, o paciente está sem máscara (<span class="arithmatex">\(\eta_p = 0.8\)</span> e <span class="arithmatex">\(\eta_I = 0\)</span>)</li>
+<li>Como esta clínica da Funorte não tem janelas para o ambiente externo (apenas para outros ambientes internos), consideraremos uma renovação de apenas 1 troca de ar completa por hora (<span class="arithmatex">\(Q = 107*3 = 321 m³/h\)</span>)</li>
+<li>O paciente será considerado o infector (<span class="arithmatex">\(q = 72 quantas/h\)</span>)</li>
+<li>A atividade respiratória dos atendentes será considerada como quem faz exercício leve (<span class="arithmatex">\(p = 1.38 m³/h\)</span>)</li>
+</ul>
+<p><strong> Obs1: Os valores de quanta viral e atividade respiratória são atualizados constantemente em função de novos estudos e também das variáveis virais. Os valores atuais foram extraidos do <a href="https://indoor-covid-safety.herokuapp.com/apps/advanced?units=metric">MIT</a> para variante original da COVID19</strong></p>
+<p><strong>Obs2: Máscaras cirúrgicas tem ajuste frouxo, o que permite passagem sem filtragem de muito contaminante pelas frestas. Por isso ao utiliza-las é necessário utilizar algum recurso para melhorar o ajuste, senão ocorre como na imagem de captação de infravermelho abaixo:</strong></p>
+<p><img alt="Vazamento pela máscara" src="videos/Mascara%20frouxa%20video.gif" /></p>
+<p><span class="arithmatex">\(P = 1 - {\rm e}({\frac{-Iqpt(1 - \eta_I)(1 - \eta_p)}{\alpha_{vent} + \alpha_{natural} + \alpha_{filtro}}}) = 1 - {\rm e}{\frac{-1*72*1.38*1(1-0)(1-0.8)}{321}} = 0.0600292696 = 6\%\)</span></p>
+<p>Nas condições apresentadas, o risco de uma nova contaminação é de 6%. Como já citado, é possível identificar o número esperado de novos casos a partir da equivalência da equação de Wells-Riley, com <span class="arithmatex">\(P = \frac{C}{S}\)</span>. Como o total de indivíduos susceptíveis é 3 (<span class="arithmatex">\(S = 3\)</span>) e o risco identificado é de 6% (<span class="arithmatex">\(P = 0.06\)</span>), a expectativa é que tenhamos:</p>
+<p><span class="arithmatex">\(P = \frac{C}{S} = 0.06 = \frac{C}{3}\)</span></p>
+<p><span class="arithmatex">\(C = 0.0600292696*3 = 0,180087809\)</span> </p>
+<p>Indicando que as condições atuais não são suficientes para contaminação de um novo indivíduo, pois <span class="arithmatex">\(C &lt; 1\)</span>.</p>
+<p>Considerando agora que ocorram atendimentos durante 8 horas, sempre com o paciente estando infectado, o resultado é:</p>
+<p><span class="arithmatex">\(P = 1 - {\rm e}({\frac{-Iqpt(1 - \eta_I)(1 - \eta_p)}{\alpha_{vent} + \alpha_{natural} + \alpha_{filtro}}}) = 1 - {\rm e}{\frac{-1*72*1.38*8(1-0)(1-0.8)}{321}} = 0.39058289 = 39\%\)</span></p>
+<p><span class="arithmatex">\(P = \frac{C}{S} = 0.39 = \frac{C}{3}\)</span></p>
+<p><span class="arithmatex">\(C = 0.39058289*3 = 1.17174867\)</span> </p>
+<p>O que indica que para atendimento contínuo por 8h as condições não são seguras nem mesmo para uma equipe tão pequena, pois existe o alto risco de contaminação (39%) e desta forma a expectativa é que seja suficiente para contaminar pelo menos <strong>UM</strong> indivíduo (<span class="arithmatex">\(C = 1.17\)</span>).</p>
+<p>A situação atual permite explorar o efeito de algumas medidas mitigadoras, como o uso de máscaras melhores e também purificadores de ar com filtro HEPA.</p>
+<p>Ao modificar as máscaras dos atendentes para N95 mantendo as 8h de atendimento, temos o seguinte resultado, agora com <span class="arithmatex">\(\eta_p = 0.95\)</span>:</p>
+<p><span class="arithmatex">\(P = 1 - {\rm e}({\frac{-Iqpt(1 - \eta_I)(1 - \eta_p)}{\alpha_{vent} + \alpha_{natural} + \alpha_{filtro}}}) = 1 - {\rm e}{\frac{-1*72*1.38*8(1-0)(1-0.95)}{321}} = 0.11645502595 = 11\%\)</span></p>
+<p><span class="arithmatex">\(P = \frac{C}{S} = 0.39 = \frac{C}{3}\)</span> </p>
+<p><span class="arithmatex">\(C = 0.11645502595*3 = 0.34936507787\)</span> </p>
+<p>O que indica que a adoção de máscaras N95 traz o risco novamente para um patamar teoricamente seguro, onde o número de novos casos ficaria novamente abaixo de UM.</p>
+<p>Com a adição de um purificador com filtro HEPA com vazão de 500m³, teremos o seguinte resultado:</p>
+<p><span class="arithmatex">\(P = 1 - {\rm e}({\frac{-Iqpt(1 - \eta_I)(1 - \eta_p)}{\alpha_{vent} + \alpha_{natural} + \alpha_{filtro}}}) = 1 - {\rm e}{\frac{-1*72*1.38*8(1-0)(1-0.8)}{321+500}} = 0.17604307672 = 17\%\)</span></p>
+<p><span class="arithmatex">\(P = \frac{C}{S} = 0.17 = \frac{C}{3}\)</span></p>
+<p><span class="arithmatex">\(C = 0.17604307672*3 = 0.52812923016\)</span> </p>
+<p>O que indica que o purificador também consegue reduzir o risco de contaminação a um patamar seguro (<span class="arithmatex">\(C &lt;= 1\)</span>) e portanto é uma medida eficaz para mitigar os riscos para os ocupantes deste espaço.</p>
+<p>Combinando as duas medidas, temos:</p>
+<p><span class="arithmatex">\(P = 1 - {\rm e}({\frac{-Iqpt(1 - \eta_I)(1 - \eta_p)}{\alpha_{vent} + \alpha_{natural} + \alpha_{filtro}}}) = 1 - {\rm e}{\frac{-1*72*1.38*8(1-0)(1-0.95)}{321+500}} = 0.04725620979 = 4\%\)</span></p>
+<p><span class="arithmatex">\(P = \frac{C}{S} = 0.04 = \frac{C}{3}\)</span> </p>
+<p><span class="arithmatex">\(C = 0.04725620979*3 = 0.14176862937\)</span> </p>
+<p>A conclusão é que para este segundo cenário, em que os atendimentos ocorrem por 8h continuamente e sempre com o paciente sendo considerado o agente contaminado, é possível oferecer segurança ao restante da equipe com a implementação de qualquer uma das 3 medidas descritas (somente máscaras N95, somente purificador + máscaras cirúrgicas, purificaor + N95).</p>
+<p>Qualquer outra combinação de circunstâncias pode ser acessado com a modificação das variáveis do modelo. Isso permite avaliar por exemplo a mudança na ocupação, a mudança de infraestrutura para aumentar a ventilação, mudança no tempo de atendimento e comparar quais os efeitos de cada uma dessas intervenções.</p>
+<p>Este é um exemplo que carrega as simplificações já apresentadas em <a href="#apresentacao_da_equacao_de_wells-riley">Apresentação da equação de Wells-Riley</a>, sendo uma descrição aproximada da realidade. Mesmo assim, é um ganho substancial no poder de compreensão da influência de cada variável do processo de contaminação e municia os ocupantes e gestores da universidade a tomar decisões mais conscientes e fundamentadas para gerir as situações possíveis. </p>
+<p>Através dele é possível criar de antemão planos de ação públicos para cada cenário e ambientes, definindo condições limite que deverão ser respeitadas sem que os servidores e discentes precisem ter o ônus de realizar quaisquer operações matemáticas.</p>
+<p>O resultado será um plano de ação com menos decisões subjetivas, que poderá prover um grau maior de segurança a toda a comunidade acadêmica.</p>
+<h2 id="conclusao">Conclusão<a class="headerlink" href="#conclusao" title="Permanent link">&para;</a></h2>
+<p>O modelo de Wells-Riley é um modelo epidemiológico simples que se mantém em uso desde sua concepção, que ao ser integrado ao nosso protocolo de biossegurança em substituição ao distanciamento social permitirá uma melhoria substancial em capacidade analitica e de promoção de intervenções conscientes pela universidade.</p>
+<p>Como já mencionado, o modelo está longe de ser uma bala de prata, mas é o suficiente para jogar luz sobre pontos cruciais que atualmente são pouco claros ou subjetivos na capacidade de análise atual, como tempo de exposição, as diferentes atividades físicas realizadas (que influenciam na quantidade de contaminante exalado e aspirado), tipos de máscara, mecanismos de remoção de contaminantes, etc. O modelo de Wells-Riley também não é o protocolo de biossegurança em si, mas o núcleo de tomada de decisão de um protocolo que será dimensionado em seu entorno.</p>
+<p>Com a apresentação destes argumentos espera-se ter sido capaz de demonstrar os benefícios desta mudança de paradigma, que apesar de demandar uma reformulação de políticas já estabelecidas, oferece um conjunto de ganhos tão notável que justifica de sobremaneira essa mudança de curso.</p>
+<h2 id="referencias">Referências<a class="headerlink" href="#referencias" title="Permanent link">&para;</a></h2>
+<p>Bazant, M.Z., Bush, J.W.M., 2021. A guideline to limit indoor airborne transmission of COVID-19. Proc Natl Acad Sci USA 118, e2018995118. <a href="https://doi.org/10.1073/pnas.2018995118">https://doi.org/10.1073/pnas.2018995118</a></p>
+<p>Dai, H., Zhao, B., 2020. Association of the infection probability of COVID-19 with ventilation rates in confined spaces. Build. Simul. 13, 1321–1327. <a href="https://doi.org/10.1007/s12273-020-0703-5">https://doi.org/10.1007/s12273-020-0703-5</a></p>
+<p>Henriques, A., Rognlien, M., Devine, J., Azzopardi, G., Mounet, N., Elson, P., Andreini, M., Tarocco, N., n.d. Modelling airborne transmission of SARS-CoV-2: Risk assessment for enclosed spaces 36. <a href="https://cds.cern.ch/record/2756083">https://cds.cern.ch/record/2756083</a></p>
+<p>Lau, Z., Griffiths, I.M., English, A., Kaouri, K., 2021. Predicting the Spatially Varying Infection Risk in Indoor Spaces Using an Efficient Airborne Transmission Model. arXiv:2012.12267 [physics, q-bio]. <a href="https://arxiv.org/abs/2012.12267">https://arxiv.org/abs/2012.12267</a></p>
+<p>Rothamer, D.A., Sanders, S., Reindl, D., Bertram, T.H., 2021. Strategies to minimize SARS-CoV-2 transmission in classroom settings: combined impacts of ventilation and mask effective filtration efficiency. Science and Technology for the Built Environment 1–23. <a href="https://doi.org/10.1080/23744731.2021.1944665">https://doi.org/10.1080/23744731.2021.1944665</a></p>
+<p>Sze To, G.N., Chao, C.Y.H., 2010. Review and comparison between the Wells–Riley and dose-response approaches to risk assessment of infectious respiratory diseases. Indoor Air 20, 2–16. <a href="https://doi.org/10.1111/j.1600-0668.2009.00621.x">https://doi.org/10.1111/j.1600-0668.2009.00621.x</a></p>
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+        
+      </main>
+      
+        
+<footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        Made with
+        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+          Material for MkDocs
+        </a>
+        
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": ".", "features": [], "translations": {"clipboard.copy": "Copiar para \u00e1rea de transfer\u00eancia", "clipboard.copied": "Copiado para \u00e1rea de transfer\u00eancia", "search.config.lang": "pt", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Buscar", "search.result.placeholder": "Digite para iniciar a busca", "search.result.none": "Nenhum resultado encontrado", "search.result.one": "1 resultado encontrado", "search.result.other": "# resultados encontrados", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "assets/javascripts/workers/search.709b4209.min.js", "version": null}</script>
+    
+    
+      <script src="assets/javascripts/bundle.febc23d1.min.js"></script>
+      
+        <script src="javascripts/config.js"></script>
+      
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>

@@ -1,2 +1,43 @@
-site_name: Protocolo de avaliação de segurança ambiental norteado pela equação de Wells-Riley
+site_name: Protocolo de biossegurança norteado pela equação de Wells-Riley
 
+site_url: https://erickcampos50.github.io/wells-riley/
+
+nav:
+    - Ver página inicial: 'index.md'
+    
+
+theme:
+    name: material
+    language: pt
+    highlightjs: true
+    palette:
+      primary: blue
+    
+markdown_extensions:
+    - toc:
+        permalink: True
+        separator: "_"
+    - abbr
+    - admonition
+    - def_list
+    - attr_list
+    - pymdownx.arithmatex:
+        generic: true
+    
+
+plugins:
+  - mkdocs-video:
+      css_style:
+        width: "100%" #Essa proporção de 100% horizontal e 80vh vertical ficou boa (mais info: https://desenvolvimentoparaweb.com/css/unidades-css-rem-vh-vw-vmin-vmax-ex-ch/)
+        height: "80vh"
+
+repo_url: https://github.com/erickcampos50/wells-riley
+repo_name: erick-campos/wells-riley
+
+
+  
+
+extra_javascript:
+  - javascripts/config.js
+  - https://polyfill.io/v3/polyfill.min.js?features=es6
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
