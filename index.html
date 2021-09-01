@@ -67,7 +67,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#introducao" class="md-skip">
+        <a href="#proposta_de_construcao_de_um_protocolo_de_biosseguranca_norteado_pelo_modelo_de_wells-rley" class="md-skip">
           Ir para o conteúdo
         </a>
       
@@ -206,6 +206,13 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#introducao" class="md-nav__link">
+    Introdução
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#apresentacao_da_equacao_de_wells-riley" class="md-nav__link">
     Apresentação da equação de Wells-Riley
   </a>
@@ -307,6 +314,13 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#introducao" class="md-nav__link">
+    Introdução
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#apresentacao_da_equacao_de_wells-riley" class="md-nav__link">
     Apresentação da equação de Wells-Riley
   </a>
@@ -391,7 +405,8 @@
                   </a>
                 
                 
-                <h1 id="introducao">Introdução<a class="headerlink" href="#introducao" title="Permanent link">&para;</a></h1>
+                <h1 id="proposta_de_construcao_de_um_protocolo_de_biosseguranca_norteado_pelo_modelo_de_wells-rley">Proposta de construção de um protocolo de biossegurança norteado pelo modelo de Wells-Rley<a class="headerlink" href="#proposta_de_construcao_de_um_protocolo_de_biosseguranca_norteado_pelo_modelo_de_wells-rley" title="Permanent link">&para;</a></h1>
+<h2 id="introducao">Introdução<a class="headerlink" href="#introducao" title="Permanent link">&para;</a></h2>
 <p>O cenário atual de pandemia vem demandando adequação de espaços de uso coletivo para manutenção da segurança dos ocupantes, algo distante de ser trivial devido à necessidade de cômputo de diversas variáveis como número de ocupantes, tempo de exposição, condições de ventilação, atividade dos ocupantes (que influencia quanto exalam e inspiram eventuais contaminantes) para se obter respostas sobre as condições de segurança dos ambientes.</p>
 <p>O que se propõe é a revisão do protocolo de biosegurança atual baseado essencialmente num paradigma de que existem sítios  no entorno de indivíduos capazes de delimitar o risco de contágio como na imagem esquemática abaixo. </p>
 <p><img alt="Distanciamento social simples" src="images/sala-distanciamento-simples.png" /></p>
@@ -561,30 +576,38 @@
 <p><img alt="Vazamento pela máscara" src="videos/Mascara%20frouxa%20video.gif" /></p>
 <p><span class="arithmatex">\(P = 1 - {\rm e}({\frac{-Iqpt(1 - \eta_I)(1 - \eta_p)}{\alpha_{vent} + \alpha_{natural} + \alpha_{filtro}}}) = 1 - {\rm e}{\frac{-1*72*1.38*1(1-0)(1-0.8)}{321}} = 0.0600292696 = 6\%\)</span></p>
 <p>Nas condições apresentadas, o risco de uma nova contaminação é de 6%. Como já citado, é possível identificar o número esperado de novos casos a partir da equivalência da equação de Wells-Riley, com <span class="arithmatex">\(P = \frac{C}{S}\)</span>. Como o total de indivíduos susceptíveis é 3 (<span class="arithmatex">\(S = 3\)</span>) e o risco identificado é de 6% (<span class="arithmatex">\(P = 0.06\)</span>), a expectativa é que tenhamos:</p>
-<p><span class="arithmatex">\(P = \frac{C}{S} = 0.06 = \frac{C}{3} =&gt; C = 0.0600292696*3 = 0,180087809\)</span> </p>
+<p><span class="arithmatex">\(P = \frac{C}{S} = 0.06 = \frac{C}{3}\)</span></p>
+<p><span class="arithmatex">\(C = 0.0600292696*3 = 0,180087809\)</span> </p>
 <p>Indicando que as condições atuais não são suficientes para contaminação de um novo indivíduo, pois <span class="arithmatex">\(C &lt; 1\)</span>.</p>
 <p>Considerando agora que ocorram atendimentos durante 8 horas, sempre com o paciente estando infectado, o resultado é:</p>
 <p><span class="arithmatex">\(P = 1 - {\rm e}({\frac{-Iqpt(1 - \eta_I)(1 - \eta_p)}{\alpha_{vent} + \alpha_{natural} + \alpha_{filtro}}}) = 1 - {\rm e}{\frac{-1*72*1.38*8(1-0)(1-0.8)}{321}} = 0.39058289 = 39\%\)</span></p>
-<p><span class="arithmatex">\(P = \frac{C}{S} = 0.39 = \frac{C}{3} =&gt; C = 0.39058289*3 = 1.17174867\)</span> </p>
+<p><span class="arithmatex">\(P = \frac{C}{S} = 0.39 = \frac{C}{3}\)</span></p>
+<p><span class="arithmatex">\(C = 0.39058289*3 = 1.17174867\)</span> </p>
 <p>O que indica que para atendimento contínuo por 8h as condições não são seguras nem mesmo para uma equipe tão pequena, pois existe o alto risco de contaminação (39%) e desta forma a expectativa é que seja suficiente para contaminar pelo menos <strong>UM</strong> indivíduo (<span class="arithmatex">\(C = 1.17\)</span>).</p>
 <p>A situação atual permite explorar o efeito de algumas medidas mitigadoras, como o uso de máscaras melhores e também purificadores de ar com filtro HEPA.</p>
 <p>Ao modificar as máscaras dos atendentes para N95 mantendo as 8h de atendimento, temos o seguinte resultado, agora com <span class="arithmatex">\(\eta_p = 0.95\)</span>:</p>
 <p><span class="arithmatex">\(P = 1 - {\rm e}({\frac{-Iqpt(1 - \eta_I)(1 - \eta_p)}{\alpha_{vent} + \alpha_{natural} + \alpha_{filtro}}}) = 1 - {\rm e}{\frac{-1*72*1.38*8(1-0)(1-0.95)}{321}} = 0.11645502595 = 11\%\)</span></p>
-<p><span class="arithmatex">\(P = \frac{C}{S} = 0.39 = \frac{C}{3} =&gt; C = 0.11645502595*3 = 0.34936507787\)</span> </p>
+<p><span class="arithmatex">\(P = \frac{C}{S} = 0.39 = \frac{C}{3}\)</span> </p>
+<p><span class="arithmatex">\(C = 0.11645502595*3 = 0.34936507787\)</span> </p>
 <p>O que indica que a adoção de máscaras N95 traz o risco novamente para um patamar teoricamente seguro, onde o número de novos casos ficaria novamente abaixo de UM.</p>
 <p>Com a adição de um purificador com filtro HEPA com vazão de 500m³, teremos o seguinte resultado:</p>
 <p><span class="arithmatex">\(P = 1 - {\rm e}({\frac{-Iqpt(1 - \eta_I)(1 - \eta_p)}{\alpha_{vent} + \alpha_{natural} + \alpha_{filtro}}}) = 1 - {\rm e}{\frac{-1*72*1.38*8(1-0)(1-0.8)}{321+500}} = 0.17604307672 = 17\%\)</span></p>
-<p><span class="arithmatex">\(P = \frac{C}{S} = 0.17 = \frac{C}{3} =&gt; C = 0.17604307672*3 = 0.52812923016\)</span> </p>
+<p><span class="arithmatex">\(P = \frac{C}{S} = 0.17 = \frac{C}{3}\)</span></p>
+<p><span class="arithmatex">\(C = 0.17604307672*3 = 0.52812923016\)</span> </p>
 <p>O que indica que o purificador também consegue reduzir o risco de contaminação a um patamar seguro (<span class="arithmatex">\(C &lt;= 1\)</span>) e portanto é uma medida eficaz para mitigar os riscos para os ocupantes deste espaço.</p>
 <p>Combinando as duas medidas, temos:</p>
 <p><span class="arithmatex">\(P = 1 - {\rm e}({\frac{-Iqpt(1 - \eta_I)(1 - \eta_p)}{\alpha_{vent} + \alpha_{natural} + \alpha_{filtro}}}) = 1 - {\rm e}{\frac{-1*72*1.38*8(1-0)(1-0.95)}{321+500}} = 0.04725620979 = 4\%\)</span></p>
-<p><span class="arithmatex">\(P = \frac{C}{S} = 0.04 = \frac{C}{3} =&gt; C = 0.04725620979*3 = 0.14176862937\)</span> </p>
+<p><span class="arithmatex">\(P = \frac{C}{S} = 0.04 = \frac{C}{3}\)</span> </p>
+<p><span class="arithmatex">\(C = 0.04725620979*3 = 0.14176862937\)</span> </p>
 <p>A conclusão é que para este segundo cenário, em que os atendimentos ocorrem por 8h continuamente e sempre com o paciente sendo considerado o agente contaminado, é possível oferecer segurança ao restante da equipe com a implementação de qualquer uma das 3 medidas descritas (somente máscaras N95, somente purificador + máscaras cirúrgicas, purificaor + N95).</p>
 <p>Qualquer outra combinação de circunstâncias pode ser acessado com a modificação das variáveis do modelo. Isso permite avaliar por exemplo a mudança na ocupação, a mudança de infraestrutura para aumentar a ventilação, mudança no tempo de atendimento e comparar quais os efeitos de cada uma dessas intervenções.</p>
 <p>Este é um exemplo que carrega as simplificações já apresentadas em <a href="#apresentacao_da_equacao_de_wells-riley">Apresentação da equação de Wells-Riley</a>, sendo uma descrição aproximada da realidade. Mesmo assim, é um ganho substancial no poder de compreensão da influência de cada variável do processo de contaminação e municia os ocupantes e gestores da universidade a tomar decisões mais conscientes e fundamentadas para gerir as situações possíveis. </p>
 <p>Através dele é possível criar de antemão planos de ação públicos para cada cenário e ambientes, definindo condições limite que deverão ser respeitadas sem que os servidores e discentes precisem ter o ônus de realizar quaisquer operações matemáticas.</p>
 <p>O resultado será um plano de ação com menos decisões subjetivas, que poderá prover um grau maior de segurança a toda a comunidade acadêmica.</p>
 <h2 id="conclusao">Conclusão<a class="headerlink" href="#conclusao" title="Permanent link">&para;</a></h2>
+<p>O modelo de Wells-Riley é um modelo epidemiológico simples que se mantém em uso desde sua concepção, que ao ser integrado ao nosso protocolo de biossegurança em substituição ao distanciamento social permitirá uma melhoria substancial em capacidade analitica e de promoção de intervenções conscientes pela universidade.</p>
+<p>Como já mencionado, o modelo está longe de ser uma bala de prata, mas é o suficiente para jogar luz sobre pontos cruciais que atualmente são pouco claros ou subjetivos na capacidade de análise atual, como tempo de exposição, as diferentes atividades físicas realizadas (que influenciam na quantidade de contaminante exalado e aspirado), tipos de máscara, mecanismos de remoção de contaminantes, etc. O modelo de Wells-Riley também não é o protocolo de biossegurança em si, mas o núcleo de tomada de decisão de um protocolo que será dimensionado em seu entorno.</p>
+<p>Com a apresentação destes argumentos espera-se ter sido capaz de demonstrar os benefícios desta mudança de paradigma, que apesar de demandar uma reformulação de políticas já estabelecidas, oferece um conjunto de ganhos tão notável que justifica de sobremaneira essa mudança de curso.</p>
 <h2 id="referencias">Referências<a class="headerlink" href="#referencias" title="Permanent link">&para;</a></h2>
 <p>Bazant, M.Z., Bush, J.W.M., 2021. A guideline to limit indoor airborne transmission of COVID-19. Proc Natl Acad Sci USA 118, e2018995118. <a href="https://doi.org/10.1073/pnas.2018995118">https://doi.org/10.1073/pnas.2018995118</a></p>
 <p>Dai, H., Zhao, B., 2020. Association of the infection probability of COVID-19 with ventilation rates in confined spaces. Build. Simul. 13, 1321–1327. <a href="https://doi.org/10.1007/s12273-020-0703-5">https://doi.org/10.1007/s12273-020-0703-5</a></p>
