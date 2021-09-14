@@ -1,10 +1,10 @@
-# Proposta de construção de um protocolo de biossegurança norteado pelo modelo de Wells-Rley
+# Proposta de construção de um protocolo de biossegurança norteado pelo modelo de Wells-Riley
 
 ## Introdução
 
 O cenário atual de pandemia vem demandando adequação de espaços de uso coletivo para manutenção da segurança dos ocupantes, algo distante de ser trivial devido à necessidade de cômputo de diversas variáveis como número de ocupantes, tempo de exposição, condições de ventilação, atividade dos ocupantes (que influencia quanto exalam e inspiram eventuais contaminantes) para se obter respostas sobre as condições de segurança dos ambientes.
 
-O que se propõe é a revisão do protocolo de biosegurança atual baseado essencialmente num paradigma de que existem sítios  no entorno de indivíduos capazes de delimitar o risco de contágio como na imagem esquemática abaixo. 
+O que se propõe é a revisão do protocolo de biossegurança atual baseado essencialmente num paradigma de que existem sítios  no entorno de indivíduos capazes de delimitar o risco de contágio como na imagem esquemática abaixo. 
 
 ![Distanciamento social simples](images\sala-distanciamento-simples.png)
 
@@ -14,7 +14,7 @@ No entanto as condições reais de transmissão da doença se aproximam mais à 
 
 A principal deficiência do protocolo atual é a falta de trato quantitativo para as principais variáveis determinantes da dispersão da COVID19 como as citadas no início do texto, por isso propõe-se a substituição do seu paradigma por outro baseado no modelo de Wells-Riley.
 
-**Este texto se propõe a apresentar os motivos para substituição do modelo atual de protocolo de biossegurança para o um modelo que se baseia na equação de Wells-Riley, que relaciona tempo de exposição, atividades realizadas pelos indivíduos e medidas santizantes com o o risco de uma novo contágio.**
+**Este texto se propõe a apresentar os motivos para substituição do modelo atual de protocolo de biossegurança para o um modelo que se baseia na equação de Wells-Riley, que relaciona tempo de exposição, atividades realizadas pelos indivíduos e medidas sanitizantes com o o risco de uma novo contágio.**
 
 Desta forma será possível construir uma abordagem quantitativa validada, simplificada e estruturada para analisar os aspectos referentes à biossegurança nos ambientes da universidade. Transpondo as limitações dos protocolos baseados na concepção de que a transmissão predominante do SARS-CoV-2 se dá por partículas balísticas e superfícies, que tem como principal medida o distanciamento social. 
 
@@ -28,21 +28,23 @@ Os protocolos fundamentados no distanciamento social não são instrumentados pa
 * Como viabilizar atividades que envolvem movimentação de pessoas entre diversos postos de trabalho e ambientes, como atividades administrativas?
 * Como viabilizar atividades em ambientes que possuem infraestrutura diferente de uma sala de aula, como laboratórios de bancadas fixas ou que de alguma forma não permitam a reorganização dos postos?
 
-Devido ao fato destas questões importantes e tantas outras inciderem sobre uma zona cinzenta de aplicação do protocolo atual têm-se a aplicação subjetiva de critérios diversos para suprir as lacunas, o que não é uma boa prática para estas situações. A incorporação do modelo de Wells-Riley no cerno do protocolo de biossegurança trará o benefício de um instrumento de análise mais completo e responsivo às demandas da universidade.
+Devido ao fato destas questões importantes e tantas outras incidirem sobre uma zona cinzenta de aplicação do protocolo atual têm-se, na prática, a aplicação subjetiva de critérios diversos para suprir as lacunas, o que não é uma boa prática para estas situações. A incorporação do modelo de Wells-Riley no cerne do protocolo de biossegurança trará o benefício de um instrumento de análise mais completo e responsivo às demandas da universidade.
 
 Nesta proposta de revisão do protocolo atual serão apresentados os seguintes tópicos:
 
 * [Apresentação de Wells-Riley](#apresentacao-de-wells-riley) - Contém uma apresentação sucinta da equação básica do modelo de Wells-Riley
-* [Máscaras vs Ventilação](#mascaras-vs-ventilacao) - Um exemplo de aplicação do modelo de Wells-Riley, em que é comparado o efeito da ventilação/filtragem comparado com diversas máscaras nas mesmas condições
+* [Máscaras e Ventilação](#mascaras-vs-ventilacao) - Um exemplo de aplicação do modelo de Wells-Riley, em que é analisado o efeito da ventilação/filtragem comparado com diversas máscaras nas mesmas condições
 * [Aplicação comparativa do modelo de Wells-Riley e distanciamento social a ambientes da UFJF-GV](#aplicacao_comparativa_do_modelo_de_wells-riley_e_distanciamento_social_a_ambientes_da_ufjf-gv) - Nesta seção é feita a aplicação do protocolo em ambientes da UFJF-GV para discutir sua forma de aplicação e diferenças para o protocolo atual
 * [Conclusão](#conclusao) - Um apanhado dos conteúdos apresentados
+
+
 ## Apresentação da equação de Wells-Riley
 
 A equação de Wells-Riley é um modelo epidemiológico que captura uma série de fatores relacionados à transmissão de doenças por via aérea num formato simples que pode ser facilmente processado em planilhas e até mesmo em calculadoras científicas. Apesar da simplicidade, este modelo faz parte da formulação de modelagens da transmissão da COVID19 desenvolvidas pelo [MIT](https://indoor-covid-safety.herokuapp.com/) e [CERN](https://cara.web.cern.ch/) (os links apresentados são de calculadoras avançadas que valem a pena ser conhecidas).
 
 $P = 1 - {\rm e}^{(-Iqpt/Q)}$
 
-Em que, $P(\%)$ representa a chance de contaminação em função do número de indivíduos contaminados (infrectores) $I(un)$, do total de contaminantes exalado pelos infectores $q(h^-1)$, pela atividade respiratória dos indivíduos expostos à contaminação (susceptíveis) $p(m³/h)$, pela passagem do tempo $t(h)$ e finalmente $Q(m^3/h)$ a taxa de remoção de contaminantes. Sendo possível, a partir da seguinte equivalência estabelecer o total de novos casos esperados, onde $C$ é o número esperado de novos casos e $S$ o total de indivíduos susceptíveis:
+Em que, $P(\%)$ representa a chance de contaminação em função do número de indivíduos contaminados (infectores) $I(un)$, do total de contaminantes exalado pelos infectores $q(h^-1)$, pela atividade respiratória dos indivíduos expostos à contaminação (susceptíveis) $p(m³/h)$, pela passagem do tempo $t(h)$ e finalmente $Q(m^3/h)$ a taxa de remoção de contaminantes. Sendo possível, a partir da seguinte equivalência estabelecer o total de novos casos esperados, onde $C$ é o número esperado de novos casos e $S$ o total de indivíduos susceptíveis:
 
 $P = \frac{C}{S}$ 
 
@@ -52,9 +54,9 @@ Trata-se de um modelo extensamente utilizado desde sua introdução em 1978 até
 
 $Q = \alpha_{vent} + \alpha_{natural} + \alpha_{filtro}$
 
-* $q$, que representa o quanta viral exalado pelo infector pode incoporar o impacto filtrante da presença de diversos tipos de máscara com um fator atenuador $(1 - \eta_I)$, onde $\eta_I$ representa a eficiência de filtragem das máscaras dos utilizadas pelos infectores
+* $q$, que representa o quanta viral exalado pelo infector pode incorporar o impacto filtrante da presença de diversos tipos de máscara com um fator atenuador $(1 - \eta_I)$, onde $\eta_I$ representa a eficiência de filtragem das máscaras dos utilizadas pelos infectores
 
-* $p$, que representa a atividade respiratória dos indivíduos susceptíveis pode incoporar o impacto filtrante da presença de diversos tipos de máscara com um fator atenuador $(1 - \eta_p)$, onde $\eta_p$ representa a eficiência de filtragem das máscaras dos utilizadas pelos suscepíveis
+* $p$, que representa a atividade respiratória dos indivíduos susceptíveis pode incorporar o impacto filtrante da presença de diversos tipos de máscara com um fator atenuador $(1 - \eta_p)$, onde $\eta_p$ representa a eficiência de filtragem das máscaras dos utilizadas pelos susceptíveis
 
 Essas pequenas alterações são capazes de criar um mecanismo para aferir o impacto de máscaras e diversas formas de tratamento do ar como pode ser visto abaixo. É possível estimar até mesmo o impacto teórico de investimentos diversos (como será apresentado no tópico [Máscaras vs ventilação](#mascaras_vs_ventilacao))
 
@@ -63,26 +65,26 @@ $P = 1 - {\rm e}({\frac{-Iqpt(1 - \eta_I)(1 - \eta_p)}{\alpha_{vent} + \alpha_{n
 Apesar dos benefícios apresentados, o modelo de Wells-Riley faz uma série de simplificações para conseguir se manter simples, como:
 
 * **O modelo não faz nenhuma consideração sobre a dinâmica de contaminação por superfícies ou gotículas maiores/partículas balísticas.**
-* O ar no interior de cada ambiente é homogêneo, isto é, quando qualquer quantidade de contaminante é exalada, o montante instantaneamente é distribuido por todo o ar
+* O ar no interior de cada ambiente é homogêneo, isto é, quando qualquer quantidade de contaminante é exalada, o montante instantaneamente é distribuído por todo o ar
 * A infecção ocorre sempre quando um certo limiar de contaminante é aspirado
 * Infectores exalam contaminantes em doses constantes durante o período de permanência/interação nos ambientes
 
 Conforme outros parâmetros, como o decaimento do vírus, dimensão terminal das partículas de aerossol em função das condições ambientais, outras simplificações precisam ser feitas. A complexidade da dinâmica dos fluidos (ar e aerossol) que raras vezes se comporta de forma homogênea como é considerado no modelo e deve-se ter em mente a máxima da modelagem *"essencialmente, todos os modelos estão errados, mas alguns são úteis"*, portanto, **deve-se evitar interpretações determinísticas da realidade a partir de um modelo simplificado**.  Apesar disso, o modelo oferece uma evolução substancial em relação ao patamar atual de compreensão da dinâmica das variáveis mais importantes dos ambientes (físicas e comportamentais) em relação à COVID19.
 
 
-## Máscaras vs ventilação
+## Máscaras e ventilação
 
-Este tópico foi elaborado com o intuito de apresentar uma visão comparativa dos resultados possíveis ao incoporar medidas mitigadoras do risco de contaminação, que são máscaras e ventilação. Será demonstrado, a partir do modelo de Wells-Riley, como cada medida impacta no risco de contaminação e uma breve discussão de valores.
+Este tópico foi elaborado com o intuito de apresentar uma visão comparativa dos resultados possíveis ao incorporar medidas mitigadoras do risco de contaminação, que são máscaras e ventilação. Será demonstrado, a partir do modelo de Wells-Riley, como cada medida impacta no risco de contaminação e uma breve discussão de valores.
 
-É importante destacar que **nenhuma medida deve ser excluida** dos planos de adequação, este não é o intuito da discussão. O intuito é apresentar uma perspectiva de racionalização do uso de recursos em função da situação financeira delicada da universidade.
+É importante destacar que nenhuma medida deve ser excluída dos planos de adequação, pois **não se trata de uma oposição entre máscaras e ventilação/filtragem**, estas medidas tem efeito cumulativo quando utilizadas em conjunto. O intuito é apresentar uma aplicação do modelo Wells-Riley para auxílio na racionalização do uso de recursos em função da situação financeira delicada da universidade.
 
 ### Custo dos insumos
 
 Estes são os custos levantados na data atual dos seguintes itens:
 
-| Item                                                 | Valor (R$/un) | Filtragem | 
+| Item                                                 | Valor (R$/un) | Filtragem  | 
 |------------------------------------------------------|---------------|-----------:|
-| Purificador com filtro Hepa H13/H14. Vazão 500 m³/h.* | 4.800,00      | 500 m³/h  |
+| Purificador com filtro Hepa H13/H14. Vazão 500 m³/h.*| 4.800,00      | 500 m³/h  |
 | Máscara PFF2/N95                                   **| 5,00          | 95%       |
 | Máscara cirúrgica                                  **| 0,70          | 80%       |
 | Máscara de tecido convencional                     **| 4,00          | 50%       | 
@@ -90,7 +92,7 @@ Estes são os custos levantados na data atual dos seguintes itens:
 
 ### Comparação da redução do risco de contaminação após diversas medidas
 
-Foi feita uma análise para um ambiente hipotético para ilustrar o efeito de diferentes medidas mitigadoras com algumas variações que eventualmetne suscitam dúvidas e também do tempo, conforme lista abaixo:
+Foi feita uma análise para um ambiente hipotético para ilustrar o efeito de diferentes medidas mitigadoras com algumas variações que eventualmente suscitam dúvidas e também do tempo, conforme lista abaixo:
 
 * Nenhuma medida adotada, todos os indivíduos sem máscara
 * Todos os indivíduos utilizando N95
@@ -115,7 +117,7 @@ Sem nenhuma medida, este ambiente hipotético ofereceria 63.21% de risco de cont
 
 Pode-se perceber uma diferença muito significativa entre a não-adoção de medidas mitigadoras e a adoção de medidas básicas no risco de contágio. O mesmo ocorre com a máscara cirúrgica utilizada por ambos com redução do risco para 3.92% ou para quando somente os indivíduos não contaminados utilizam a máscara (útil para avaliar o contexto de atendimento em saúde, onde os pacientes podem estar contaminados) obtendo redução da chance de contaminação para 4.88% e 18.13% com máscaras N95 e cirúrgicas respectivamente.
 
-A presença de purificadores tem efeito teórico idêntico à ventilação e sua inclusão em detrimento da ventilação (natural e mecânica) em si foi devido à limitação de implementação de ventilaçãoem diversos ambientes que foram concebidos de forma pouco atenta a este quesito. Nestes casos, seja pelo aumento da carga térmica ou por restrições estruturais do espaço, a inclusão de ventilação é muito onerosa. Em contrapartida, o purificador é distribuido normalmente em formato portátil e com baixo consumo, sendo facilmente integrado ao ambiente e à infraestrutura elétrica. 
+A presença de purificadores tem efeito teórico idêntico à ventilação e sua inclusão em detrimento da ventilação (natural e mecânica) em si foi devido à limitação de implementação de ventilação em diversos ambientes que foram concebidos de forma pouco atenta a este quesito. Nestes casos, seja pelo aumento da carga térmica ou por restrições estruturais do espaço, a inclusão de ventilação é muito onerosa. Em contrapartida, o purificador é distribuído normalmente em formato portátil e com baixo consumo, sendo facilmente integrado ao ambiente e à infraestrutura elétrica. 
 
 Feito o esclarecimento sobre a presença do purificador, nota-se que sua influência sobre os riscos de contaminação tem uma magnitude menor do que as máscaras considerando até 12 trocas/passagens por hora (que é o valor preconizado pela OMS em ambientes de saúde com intensa geração de aerossol na presente data). Na imagem abaixo está a redução relativa percentual de risco de cada uma das medidas para o mesmo período no tempo $t = 3h$.
 
@@ -159,7 +161,7 @@ O ambiente de atendimento clínico, independente do curso, oferece um desafio de
 * Atendentes (servidores e estudantes) necessitam permanecer a distâncias muito próximas do paciente, não é possível o distanciamento conforme se preconiza
 * O paciente estará sem máscara durante o atendimento
 
-Mesmo considerando apenas um paciente e uma equipe de atendimento (2 discentes e 1 docente) e considerando a área total do espaço, que é de 107 m², o que a principio permitiria uma atribuição bastante generosa de distanciamento; mesmo realizando a desativação intercalada dos boxes, inevitavelmente haverá uma situação de proximidade extrema entre todos com o paciente retirando a máscara para a execução das atividades clínicas, como exemplificado na imagem abaixo:
+Mesmo considerando apenas um paciente e uma equipe de atendimento (2 discentes e 1 docente) e considerando a área total do espaço, que é de 107 m², o que a princípio permitiria uma atribuição bastante generosa de distanciamento; mesmo realizando a desativação intercalada dos boxes, inevitavelmente haverá uma situação de proximidade extrema entre todos com o paciente retirando a máscara para a execução das atividades clínicas, como exemplificado na imagem abaixo:
 
 ![Movimentacao Funorte](videos\Funorte.gif)
 
@@ -169,22 +171,22 @@ Partindo do cenário atual com 1 paciente e 3 atendentes somente. É preciso res
 
 * Qual o risco de transmissão da doença se um deles estiver doente?
 * Qual o tempo máximo que pode durar o atendimento?
-* Quais as medidas que podem ser utilizadas para minizar o risco de contaminação?
-* Qual o número máximo de ocupantes para se manter o risco de contaminação abaixo do risco do suficente para contaminar alguém?
+* Quais as medidas que podem ser utilizadas para minimizar o risco de contaminação?
+* Qual o número máximo de ocupantes para se manter o risco de contaminação abaixo do risco do suficiente para contaminar alguém?
 
-Parte-se do princípio que todas as medidas de contaminação por goticulas maiores e por contato serão tomadas, como óculos de proteção, gestão de materiais descartáveis, etc. O atendimento odontológico oferece riscos diversos devido à núvem de partículas geradas pelos motores de alta rotação em contato com o paciente, portanto existem protocolos muito anteriores à pandemia que devem ser seguidos.
+Parte-se do princípio que todas as medidas de contaminação por gotículas maiores e por contato serão tomadas, como óculos de proteção, gestão de materiais descartáveis, etc. O atendimento odontológico oferece riscos diversos devido à nuvem de partículas geradas pelos motores de alta rotação em contato com o paciente, portanto existem protocolos muito anteriores à pandemia que devem ser seguidos.
 
 Focaremos agora no risco de contaminação por aerossol, que é cerne da discussão atual. Para isso partiremos dos seguintes valores iniciais para alimentar o modelo de Wells-Riley:
 
 * O atendimento durará 1 hora ($t = 1h$)
-* Os 3 atendentes estarão com máscaras de tecido com ajuste perfeito e 80% de eficiencia de filtragem, o paciente está sem máscara ($\eta_p = 0.8$ e $\eta_I = 0$)
+* Os 3 atendentes estarão com máscaras de tecido com ajuste perfeito e 80% de eficiência de filtragem, o paciente está sem máscara ($\eta_p = 0.8$ e $\eta_I = 0$)
 * Como esta clínica da Funorte não tem janelas para o ambiente externo (apenas para outros ambientes internos), consideraremos uma renovação de apenas 1 troca de ar completa por hora ($Q = 107*3 = 321 m³/h$)
 * O paciente será considerado o infector ($q = 72 quantas/h$)
 * A atividade respiratória dos atendentes será considerada como quem faz exercício leve ($p = 1.38 m³/h$)
 
-** Obs1: Os valores de quanta viral e atividade respiratória são atualizados constantemente em função de novos estudos e também das variáveis virais. Os valores atuais foram extraidos do [MIT](https://indoor-covid-safety.herokuapp.com/apps/advanced?units=metric) para variante original da COVID19**
+** Obs1: Os valores de quanta viral e atividade respiratória são atualizados constantemente em função de novos estudos e também das variáveis virais. Os valores atuais foram extraídos do [MIT](https://indoor-covid-safety.herokuapp.com/apps/advanced?units=metric) para variante original da COVID19**
 
-**Obs2: Máscaras cirúrgicas tem ajuste frouxo, o que permite passagem sem filtragem de muito contaminante pelas frestas. Por isso ao utiliza-las é necessário utilizar algum recurso para melhorar o ajuste, senão ocorre como na imagem de captação de infravermelho abaixo:**
+**Obs2: Máscaras cirúrgicas tem ajuste frouxo, o que permite passagem sem filtragem de muito contaminante pelas frestas. Por isso ao utilizá-las é necessário utilizar algum recurso para melhorar o ajuste, senão ocorre como na imagem de captação de infravermelho abaixo:**
 
 ![Vazamento pela máscara](videos\Mascara frouxa video.gif)
 
@@ -241,7 +243,7 @@ $P = \frac{C}{S} = 0.04 = \frac{C}{3}$
 
 $C = 0.04725620979*3 = 0.14176862937$ 
 
-A conclusão é que para este segundo cenário, em que os atendimentos ocorrem por 8h continuamente e sempre com o paciente sendo considerado o agente contaminado, é possível oferecer segurança ao restante da equipe com a implementação de qualquer uma das 3 medidas descritas (somente máscaras N95, somente purificador + máscaras cirúrgicas, purificaor + N95).
+A conclusão é que para este segundo cenário, em que os atendimentos ocorrem por 8h continuamente e sempre com o paciente sendo considerado o agente contaminado, é possível oferecer segurança ao restante da equipe com a implementação de qualquer uma das 3 medidas descritas (somente máscaras N95, somente purificador + máscaras cirúrgicas, purificador + N95).
 
 Qualquer outra combinação de circunstâncias pode ser acessado com a modificação das variáveis do modelo. Isso permite avaliar por exemplo a mudança na ocupação, a mudança de infraestrutura para aumentar a ventilação, mudança no tempo de atendimento e comparar quais os efeitos de cada uma dessas intervenções.
 
@@ -254,7 +256,7 @@ O resultado será um plano de ação com menos decisões subjetivas, que poderá
 
 ## Conclusão
 
-O modelo de Wells-Riley é um modelo epidemiológico simples que se mantém em uso desde sua concepção, que ao ser integrado ao nosso protocolo de biossegurança em substituição ao distanciamento social permitirá uma melhoria substancial em capacidade analitica e de promoção de intervenções conscientes pela universidade.
+O modelo de Wells-Riley é um modelo epidemiológico simples que se mantém em uso desde sua concepção, que ao ser integrado ao nosso protocolo de biossegurança em substituição ao distanciamento social permitirá uma melhoria substancial em capacidade analítica e de promoção de intervenções conscientes pela universidade.
 
 Como já mencionado, o modelo está longe de ser uma bala de prata, mas é o suficiente para jogar luz sobre pontos cruciais que atualmente são pouco claros ou subjetivos na capacidade de análise atual, como tempo de exposição, as diferentes atividades físicas realizadas (que influenciam na quantidade de contaminante exalado e aspirado), tipos de máscara, mecanismos de remoção de contaminantes, etc. O modelo de Wells-Riley também não é o protocolo de biossegurança em si, mas o núcleo de tomada de decisão de um protocolo que será dimensionado em seu entorno.
 
